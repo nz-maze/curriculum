@@ -140,19 +140,19 @@ $border-color: rgb(37, 29, 29);
             border: 2px solid $border-color;
             width: 33%;
             &__img{
-                filter: sepia(90%);
+                filter: grayscale(90%);
                 width: 90%;
                 height: 700px;
                 margin-left: 5%;
                 margin-right: 5%;
                 &:hover{
+                    transition: 5s;
                     transform: rotatey(180deg);
                     -webkit-transform: rotatey(180deg);
                     -moz-transform: rotatey(180deg);
                     -ms-transform: rotatey(180deg);
                     -o-transform: rotatey(180deg);
-                    filter: sepia(0%);
-                    -webkit-filter: sepia(0%);
+                    filter: grayscale(0%);
 }
             } 
             &__title{
@@ -188,9 +188,9 @@ $border-color: rgb(37, 29, 29);
                 flex-direction: row;
                 align-self: center;
             }
-            &--principal{
+            //&--principal{
                 
-            }
+            //}
         }
         &__button{
             justify-self: center;
