@@ -144,10 +144,6 @@
   .curriculum__datos__img:hover {
     transition: 5s;
     transform: rotatey(180deg);
-    -webkit-transform: rotatey(180deg);
-    -moz-transform: rotatey(180deg);
-    -ms-transform: rotatey(180deg);
-    -o-transform: rotatey(180deg);
     filter: grayscale(0%);
   }
   .curriculum__datos__title {
@@ -160,6 +156,7 @@
     text-decoration: underline;
   }
   .juego {
+    display: none;
     font-size: 30px;
   }
   .juego__fondo {
