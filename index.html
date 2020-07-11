@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curriculum Interactivo Allan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/estilo.css" media="screen">
+        <script type="text/javascript" src="js/javascript.js"></script>
+    </head>
+    <body class="curriculum">
+        <h1 class="curriculum__title">Curriculum Interactivo</h1>
+        <main class="main">
+            <section class="curriculum__informacion">
+                <article class="curriculum__datos">
+                    <a class="curriculum__datos__title" href=""><img class="curriculum__datos__img" src="images/perfil.jpg" alt="">Perfil</a>
+                </article>
+                <article class="curriculum__datos">
+                    <a class="curriculum__datos__title" href=""><img class="curriculum__datos__img" src="images/curriculum.jpg" alt="">Curriculum</a>
+                </article class="curriculum__datos">
+                <article class="curriculum__datos">
+                    <a class="curriculum__datos__title" href=""><img class="curriculum__datos__img" src="images/contacto.jpg" alt="">Contacto</a>
+                </article>
+            </section>
+        </main>
+        
+        <section class="juego">
+            <img src="images/fondo_ppt.jpg" alt="" class="juego__fondo">
+                <div class="juego__container--principal">
+                    <h2 id="mensaje" class="juego__title">Quien Ganara</h2>
+                    <div class="juego__container">
+                        <div class="juego__container--ordenador">
+                            <p class="juego__text">Selecciona</p>
+                            <select name="" id="combo" class="juego__choice">
+                                <option value="Piedra">Piedra</option>
+                                <option value="Papel">Papel</option>
+                                <option value="Tijera">Tijera</option>
+                            </select>
+                        </div>
+                        <div class="juego__container--ordenador">
+                            <label class="juego__ordenador">Elección del Ordenador: </label>
+                            <label class="juego__ordenador" id="eleccionComputadora"></label>
+                        </div>
+                    </div>
+                    <button type="button" name="Jugar" onclick="jugar()" class="juego__button">Jugar</button>
+                </div>
+                
+        </section>
+        
+        <footer class="footer">
+
+        </footer>
+    </body>
+</html>

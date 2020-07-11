@@ -1,0 +1,219 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  .curriculum {
+    background: #d5d5d5;
+  }
+  .curriculum__title {
+    font-size: 60px;
+    font-weight: bolder;
+    text-decoration: overline;
+    text-align: center;
+    background: #c0b283;
+    padding: 20px;
+    color: #f4f4f4;
+    font-family: Garamond;
+    border: 2px solid #251d1d;
+  }
+  .curriculum__datos {
+    text-align: center;
+    border: 2px solid #251d1d;
+  }
+  .curriculum__datos__title {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+  }
+  .curriculum__datos__title:hover {
+    text-decoration: underline;
+  }
+  .curriculum__datos__img {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 700px;
+  }
+  .curriculum__datos__img:hover {
+    transform: rotatey(180deg);
+    -webkit-transform: rotatey(180deg);
+    -moz-transform: rotatey(180deg);
+    -ms-transform: rotatey(180deg);
+    -o-transform: rotatey(180deg);
+  }
+  .curriculum__datos__information {
+    width: 100vw;
+  }
+  .juego {
+    align-items: center;
+  }
+  .juego__fondo {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+  }
+  .juego__title {
+    margin-left: 30px;
+    font-size: 30px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .juego__container {
+    position: relative;
+    margin-left: 30px;
+  }
+  .juego__container--ordenador {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+  .juego__button {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 150px;
+    padding: 2px 10px;
+    border: 2px solid #251d1d;
+    /*background: $primary-color;*/
+  }
+  .juego__button:hover {
+    cursor: pointer;
+  }
+  .juego__text {
+    margin-right: 10px;
+    text-decoration: underline;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .juego__choice {
+    border: 2px solid #251d1d;
+  }
+  .juego__choice:hover {
+    cursor: pointer;
+  }
+  .juego__ordenador {
+    text-decoration: underline;
+    align-content: center;
+  }
+  .footer {
+    background: #373737;
+    height: 30px;
+    clear: both;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 5000px) {
+  .curriculum {
+    background: #d5d5d5;
+  }
+  .curriculum__title {
+    font-size: 60px;
+    font-weight: bolder;
+    text-decoration: overline;
+    text-align: center;
+    background: #c0b283;
+    padding: 20px;
+    color: #f4f4f4;
+    font-family: Garamond;
+    border: 2px solid #251d1d;
+  }
+  .curriculum__informacion {
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+  }
+  .curriculum__datos {
+    text-align: center;
+    border: 2px solid #251d1d;
+    width: 33%;
+  }
+  .curriculum__datos__img {
+    filter: sepia(90%);
+    width: 90%;
+    height: 700px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .curriculum__datos__img:hover {
+    transform: rotatey(180deg);
+    -webkit-transform: rotatey(180deg);
+    -moz-transform: rotatey(180deg);
+    -ms-transform: rotatey(180deg);
+    -o-transform: rotatey(180deg);
+    filter: sepia(0%);
+    -webkit-filter: sepia(0%);
+  }
+  .curriculum__datos__title {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+  }
+  .curriculum__datos__title:hover {
+    text-decoration: underline;
+  }
+  .juego {
+    font-size: 30px;
+  }
+  .juego__fondo {
+    width: 100vw;
+    height: 600px;
+    position: absolute;
+  }
+  .juego__title {
+    margin-left: 30px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 40px;
+  }
+  .juego__container {
+    top: 0;
+    margin-left: 30px;
+  }
+  .juego__container--ordenador {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+  .juego__button {
+    justify-self: center;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 150px;
+    padding: 2px 10px;
+    border: 2px solid #251d1d;
+    /*background: $primary-color;*/
+  }
+  .juego__button:hover {
+    cursor: pointer;
+  }
+  .juego__text {
+    margin-right: 10px;
+    text-decoration: underline;
+    position: relative;
+  }
+  .juego__choice {
+    position: relative;
+    border: 2px solid #251d1d;
+  }
+  .juego__choice:hover {
+    cursor: pointer;
+  }
+  .juego__ordenador {
+    text-decoration: underline;
+    align-content: center;
+    position: relative;
+  }
+}
+
+/*
+filter: sepia(90%);
+*/

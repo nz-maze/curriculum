@@ -1,0 +1,15 @@
+{
+  "name": "curriculum-interactivo",
+  "version": "1.0.0",
+  "description": "Curriculum interactivo de Allan Monge Bolaños-B64494",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css --output-style expanded"
+  },
+  "author": "Allan Monge Bolaños",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
