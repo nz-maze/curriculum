@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 100px;
+  transform: translate(-50%, -50%);
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  cursor: pointer;
+  width: 400px;
+  height: 800px;
+}
+
+.card:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6s linear;
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.front__img {
+  height: 100%;
+  width: 100%;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6s linear;
+  background: blanchedalmond;
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.back__content {
+  background: chocolate;
+  text-align: center;
+  width: 100%;
+}
+
+.sm {
+  margin: 20px 0px;
+}
+
+.sm i {
+  width: 20px;
+  height: 20px;
+}
+
+.sm a {
+  display: inline-flex;
+  align-items: center;
+  color: skyblue;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.sm a:hover {
+  background: blue;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .middle--contact {
+    transform: translate(-50%, -35%);
+  }
+}
