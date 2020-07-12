@@ -4,22 +4,20 @@
   box-sizing: border-box;
 }
 
-.profile {
+.curriculum {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+  margin-bottom: 50px;
   height: auto;
+  border: 2px solid black;
 }
 
-.profile__container:hover {
-  animation-name: photo;
-  animation-duration: 10s;
-  transition: 8s;
-  animation-iteration-count: initial;
-}
-
-.profile__title {
+.curriculum__title--curriculum {
   text-align: center;
   font-size: 30px;
   text-decoration: underline;
@@ -29,16 +27,7 @@
   animation-iteration-count: infinite;
 }
 
-.profile__photo {
-  width: 200px;
-  height: auto;
-  border-radius: 50px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  filter: drop-shadow(-20px 20px 5px salmon);
-}
-
-.main--profile {
+.main--curriculum {
   width: 100%;
   height: auto;
   display: flex;
@@ -46,7 +35,7 @@
   align-items: center;
 }
 
-.contentProfile {
+.contentCurriculum {
   display: flex;
   flex-direction: row;
   font-size: 20px;
@@ -63,78 +52,42 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-.contentProfile:hover {
+.contentCurriculum:hover {
   transition: 1.005s;
   background: rgba(0, 0, 0, 0.5);
   filter: drop-shadow(20px 20px 5px);
   border-radius: 15px;
+  border: 2px solid black;
   padding: 10px;
+  transform: translateY(360deg);
 }
 
-.contentProfile:hover .contentProfile__text {
+.contentCurriculum:hover .contentCurriculum__text {
   opacity: 100;
   visibility: visible;
+  transition: 5s;
 }
 
-.contentProfile:hover .contentProfile__title {
-  background: rgba(0, 0, 0, 0);
+.contentCurriculum:hover .contentCurriculum__title {
+  background: rgba(255, 140, 105, 0);
 }
 
-.contentProfile__title {
-  width: 40%;
+.contentCurriculum__title {
+  width: 50%;
   font-style: italic;
   text-decoration: none;
   padding: 5px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 140, 105, 0.5);
   color: white;
   height: auto;
 }
 
-.contentProfile__text {
+.contentCurriculum__text {
   visibility: hidden;
-  width: 60%;
+  width: 50%;
   opacity: 0;
   color: white;
   height: auto;
-}
-
-.nav {
-  background: gray;
-}
-
-.navnav__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nav__item {
-  padding: 20px;
-  margin: 10px;
-  margin-top: 0px;
-}
-
-.nav__link {
-  margin-right: 10px;
-  color: white;
-  padding: 5px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.nav__link:hover {
-  color: black;
-  cursor: pointer;
-  background: blanchedalmond;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.nav__link:active {
-  color: black;
-  cursor: pointer;
-  background: blanchedalmond;
-  text-decoration: underline;
-  font-weight: bold;
 }
 
 .body {
@@ -184,7 +137,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .contentProfile {
+  .contentCurriculum {
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -196,17 +149,24 @@
     border-radius: 15px;
     padding: 10px;
   }
-  .contentProfile__title {
+  .contentCurriculum__title {
     text-align: center;
     width: 80%;
     background: rgba(0, 0, 0, 0);
   }
-  .contentProfile__text {
-    width: 80%;
+  .contentCurriculum__text {
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
     opacity: 100;
     visibility: visible;
     opacity: 100;
     display: contents;
+  }
+  .contentCurriculum__content {
+    display: flex;
+    width: auto;
+    flex-direction: column;
   }
   .footer {
     bottom: 0;
@@ -217,26 +177,15 @@
 
 @keyframes fuente {
   25% {
-    color: #813270;
+    color: #158b29;
   }
   50% {
-    color: #323499;
+    color: #0f6385;
   }
   75% {
-    color: #c7b727;
+    color: #a8731c91;
   }
   100% {
-    -color: #db5544;
-  }
-}
-
-@keyframes photo {
-  50% {
-    transition: 5s linear;
-    transform: rotateX(-180deg);
-  }
-  100% {
-    transition: 5s linear;
-    transform: rotatey(-180deg);
+    -color: #db5644ce;
   }
 }

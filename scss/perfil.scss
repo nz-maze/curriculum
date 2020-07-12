@@ -5,6 +5,19 @@
 }
 
 .profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    &__container{
+        &:hover{
+            animation-name: photo;
+            animation-duration: 10s;
+            transition:8s;
+            animation-iteration-count: initial;
+        }
+    }
     &__title{
         text-align: center;
         font-size: 30px;
@@ -24,11 +37,7 @@
     }
 }
 .profile{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
+    
 }
 
 .main--profile{
@@ -213,5 +222,15 @@
     }
     100% {
         -color: #db5544;
+    }
+}
+@keyframes photo {
+    50% {
+        transition: 5s linear;
+        transform: rotateX(-180deg);
+    }
+    100% {
+        transition: 5s linear;
+        transform: rotatey(-180deg)
     }
 }
