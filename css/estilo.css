@@ -341,7 +341,7 @@
   box-sizing: border-box;
 }
 
-.curriculum {
+.curriculum--curriculum {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -354,7 +354,7 @@
   border: 2px solid black;
 }
 
-.curriculum__title--curriculum {
+.curriculum--curriculum__title--curriculum {
   text-align: center;
   font-size: 30px;
   text-decoration: underline;
