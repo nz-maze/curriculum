@@ -5,24 +5,26 @@
 }
 
 .curriculum{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: auto;
-    border: 2px solid black;
-    &__title--curriculum{
-        text-align: center;
-        font-size: 30px;
-        text-decoration: underline;
-        animation-name: fuente;
-        animation-duration: 10s;
-        transition:8s;
-        animation-iteration-count: infinite;
+    &--curriculum{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: auto;
+        border: 2px solid black;
+        &__title--curriculum{
+            text-align: center;
+            font-size: 30px;
+            text-decoration: underline;
+            animation-name: fuente;
+            animation-duration: 10s;
+            transition:8s;
+            animation-iteration-count: infinite;
+        }
     }
     
 }

@@ -6,7 +6,7 @@ $body-color: #d5d5d5;
 $primary-color: #f4f4f4;
 $footer-color: #373737;
 
-$border-color: rgb(37, 29, 29);
+//$border-color: rgba(37, 29, 29,0);
 *{
     padding: 0px;
     margin: 0px;
@@ -25,7 +25,7 @@ $border-color: rgb(37, 29, 29);
         padding: 20px;
         color: $primary-color;
         font-family: Garamond;
-        border: 2px solid $border-color;
+        //border: 2px solid $border-color;
     }
     &__datos{
         text-align: center;
@@ -97,7 +97,7 @@ $border-color: rgb(37, 29, 29);
         margin-top: 10px;
         margin-left: 150px;
         padding: 2px 10px;
-        border: 2px solid $border-color;
+        //border: 2px solid $border-color;
         /*background: $primary-color;*/
         &:hover{
             cursor: pointer;
@@ -110,7 +110,7 @@ $border-color: rgb(37, 29, 29);
         flex-wrap: nowrap;
     }
     &__choice{
-        border: 2px solid $border-color;
+        //border: 2px solid $border-color;
         &:hover{
             cursor: pointer;
         }
@@ -141,7 +141,7 @@ $border-color: rgb(37, 29, 29);
             padding: 20px;
             color: $primary-color;
             font-family: Garamond;
-            border: 2px solid $border-color;
+            //border: 2px solid $border-color;
         }
         &__informacion{
             margin: 10px;
@@ -151,7 +151,7 @@ $border-color: rgb(37, 29, 29);
         }
         &__datos{
             text-align: center;
-            border: 2px solid $border-color;
+            //border: 2px solid $border-color;
             width: 33%;
             &__img{
                 filter: grayscale(90%);
@@ -212,7 +212,7 @@ $border-color: rgb(37, 29, 29);
             margin-top: 10px;
             margin-left: 150px;
             padding: 2px 10px;
-            border: 2px solid $border-color;
+            //border: 2px solid $border-color;
             /*background: $primary-color;*/
             &:hover{
                 cursor: pointer;
@@ -225,7 +225,7 @@ $border-color: rgb(37, 29, 29);
         }
         &__choice{
             position: relative;
-            border: 2px solid $border-color;
+            //border: 2px solid $border-color;
             &:hover{
                 cursor: pointer;
             }
