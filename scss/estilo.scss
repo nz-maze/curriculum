@@ -1,4 +1,6 @@
 @import 'perfil';
+@import 'contacto';
+@import 'curriculum';
 $title-color: #c0b283;
 $body-color: #d5d5d5;
 $primary-color: #f4f4f4;
@@ -72,12 +74,22 @@ $border-color: rgb(37, 29, 29);
         position: relative;
     }
     &__container{
-        position: relative;
-        margin-left: 30px;
+        //position: absolute;
+        //margin-left: 30px;
         &--ordenador{
             display: flex;
             flex-direction: row;
             align-self: center;
+        }
+        &--principal{
+            position: relative;
+            width: 90%;
+            height: auto;
+            margin-left: 5%;
+            margin-right: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
     &__button{
@@ -179,16 +191,20 @@ $border-color: rgb(37, 29, 29);
             font-size: 40px;
         }
         &__container{
-            top: 0;
-            margin-left: 30px;
             &--ordenador{
                 display: flex;
                 flex-direction: row;
                 align-self: center;
             }
-            //&--principal{
-                
-            //}
+            &--principal{
+                width: 90%;
+                height: auto;
+                margin-left: 5%;
+                margin-right: 5%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
         &__button{
             justify-self: center;
