@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curriculum Interactivo Allan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/estilo.css" media="screen">
+        <script type="text/javascript" src="js/javascript.js"></script>
+    </head>
+    <body class="body">
+        <header>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html">Inicio</a>
+                        <a class="nav__link" href="curriculum.html">Curriculum</a>
+                        <a class="nav__link" href="contacto.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="profile">
+                <h1 class="profile__title">Perfil</h1>
+                <img class="profile__photo" src="images/photo.jpg">
+                <main class="main main--profile">
+                    <div class="contentProfile">
+                        <h2 class="contentProfile__title">Name:</h2>
+                        <p class="contentProfile__text">Allan Monge Bolaños.</p>
+                    </div>
+                    <div class="contentProfile">
+                        <h2 class="contentProfile__title">Place of residence:</h2>
+                        <p class="contentProfile__text">I live in Grecia, Alajuela, Costa Rica.</p>
+                    </div>
+                    <div class="contentProfile">
+                        <h2 class="contentProfile__title">Date of birth:</h2>
+                        <p class="contentProfile__text">I was born May 16, 1997.</p>
+                    </div>
+                    <div class="contentProfile">
+                        <h2 class="contentProfile__title">How i describe myself:</h2>
+                        <p class="contentProfile__text">I am a simple person, I want to acquire more knowledge.</p>
+                    </div>
+                    <div class="contentProfile">
+                        <h2 class="contentProfile__title">Hobbies:</h2>
+                        <p class="contentProfile__text">I like to do recreational cycling, it also strikes me to repair things and I love tools.</p>
+                    </div>
+            
+                </main>
+        </div>
+        
+        
+        
+        <footer class="footer">
+            <section class="juego">
+                <img src="images/fondo_ppt.jpg" alt="" class="juego__fondo">
+                    <div class="juego__container--principal">
+                        <h2 id="mensaje" class="juego__title">Quien Ganara</h2>
+                        <div class="juego__container">
+                            <div class="juego__container--ordenador">
+                                <p class="juego__text">Selecciona</p>
+                                <select name="" id="combo" class="juego__choice">
+                                    <option value="Piedra">Piedra</option>
+                                    <option value="Papel">Papel</option>
+                                    <option value="Tijera">Tijera</option>
+                                </select>
+                            </div>
+                            <div class="juego__container--ordenador">
+                                <label class="juego__ordenador">Elección del Ordenador: </label>
+                                <label class="juego__ordenador" id="eleccionComputadora"></label>
+                            </div>
+                        </div>
+                        <button type="button" name="Jugar" onclick="jugar()" class="juego__button">Jugar</button>
+                    </div>
+                    
+            </section>
+        </footer>
+    </body>
+</html>
